@@ -60,7 +60,7 @@ Running the command creates:
 - `docs/Day<day>/Day<day>.md` – optional notes or puzzle breakdown.  
 - `src/FlipFlop.Core/Day<day>/Day<day>.Part1.cs` and `Day<day>.Part2.cs` – the two solution entry points with `Solve(string rawText)` placeholders.  
 - `tests/FlipFlop.NUnit.Tests/Day<day>/Day<day>.Part1.Test.cs` and `Day<day>.Part2.Test.cs` – NUnit fixtures already wired to load sample/puzzle inputs.  
-- `tests/FlipFlop.NUnit.Tests/Day<day>/Day<day>.Part1.SampleInput.txt` / `Day<day>.Part2.SampleInput.txt` / `Day<day>.PuzzleInput.txt` – start empty; paste puzzle data here.
+- `tests/FlipFlop.NUnit.Tests/Day<day>/Day<day>.Part1.SampleInput.txt` / `Day<day>.PuzzleInput.txt` – start empty; paste puzzle data here.
 
 ## Working Through Each Day
 
