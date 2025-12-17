@@ -19,7 +19,7 @@ public class Day1Part3Test
     public void Day1Part3_Solve_WithPuzzleInput_ReturnsExpectedValue()
     {
         string rawText = TestDataHelper.LoadPuzzleInput(day: 1);
-        const long expected = -1;
+        const long expected = 3336;
 
         var result = Part3.Solve(rawText);
 
