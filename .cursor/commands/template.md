@@ -72,10 +72,12 @@ Docs:
 Core source:
 - `FlipFlop/src/FlipFlop.Core/Day{DAY}/Day{DAY}.Part1.cs`
 - `FlipFlop/src/FlipFlop.Core/Day{DAY}/Day{DAY}.Part2.cs`
+- `FlipFlop/src/FlipFlop.Core/Day{DAY}/Day{DAY}.Part3.cs`
 
 Tests:
 - `FlipFlop/tests/FlipFlop.NUnit.Tests/Day{DAY}/Day{DAY}.Part1.Test.cs`
 - `FlipFlop/tests/FlipFlop.NUnit.Tests/Day{DAY}/Day{DAY}.Part2.Test.cs`
+- `FlipFlop/tests/FlipFlop.NUnit.Tests/Day{DAY}/Day{DAY}.Part3.Test.cs`
 - `FlipFlop/tests/FlipFlop.NUnit.Tests/Day{DAY}/Day{DAY}.Part1.SampleInput.txt` (empty file)
 - `FlipFlop/tests/FlipFlop.NUnit.Tests/Day{DAY}/Day{DAY}.PuzzleInput.txt` (empty file)
 
@@ -132,6 +134,23 @@ namespace FlipFlop.Core.Day{DAY};
 internal static partial class Day{DAY} {
 
     internal static class Part2 {
+
+        internal static long Solve(string rawText) {
+
+            throw new NotImplementedException();
+        }
+
+    }
+}
+```
+
+#### `Day{DAY}.Part3.cs`
+```csharp
+namespace FlipFlop.Core.Day{DAY};
+
+internal static partial class Day{DAY} {
+
+    internal static class Part3 {
 
         internal static long Solve(string rawText) {
 
@@ -200,6 +219,38 @@ public class Day{DAY}Part2Test
         const long expected = -1;
 
         var result = Part2.Solve(rawText);
+
+        Assert.That(result, Is.EqualTo(expected));
+    }
+}
+```
+
+#### `Day{DAY}.Part3.Test.cs`
+```csharp
+using static FlipFlop.Core.Day{DAY}.Day{DAY};
+
+namespace FlipFlop.NUnit.Tests.Day{DAY};
+
+public class Day{DAY}Part3Test
+{
+    [Test]
+    public void Day{DAY}Part3_Solve_WithSampleInput_ReturnsExpectedValue()
+    {
+        string rawText = TestDataHelper.LoadSampleInput(day: {DAY}, part: 1);
+        const long expected = -1;
+
+        var result = Part3.Solve(rawText);
+
+        Assert.That(result, Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void Day{DAY}Part3_Solve_WithPuzzleInput_ReturnsExpectedValue()
+    {
+        string rawText = TestDataHelper.LoadPuzzleInput(day: {DAY});
+        const long expected = -1;
+
+        var result = Part3.Solve(rawText);
 
         Assert.That(result, Is.EqualTo(expected));
     }
